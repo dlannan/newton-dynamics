@@ -10,11 +10,11 @@
 
 cmake_minimum_required(VERSION 3.4.0)
 
-option("NEWTON_BUILD_SANDBOX_DEMOS" "generates demos projects" "ON")
+option("NEWTON_BUILD_SANDBOX_DEMOS" "generates demos projects" OFF)
 option("NEWTON_BUILD_PROFILER" "build profiler" OFF)
 option("NEWTON_BUILD_SINGLE_THREADED" "multi threaded" OFF)
 option("NEWTON_DOUBLE_PRECISION" "generate double precision" OFF)
-option("NEWTON_STATIC_RUNTIME_LIBRARIES" "use windows static libraries" ON)
+option("NEWTON_STATIC_RUNTIME_LIBRARIES" "use windows static libraries" OFF)
 option("NEWTON_USE_PLUGIN_DLL" "use plugins dlls" ON)
 #option("NEWTON_WITH_SSE_PLUGIN" "adding sse parallel solver" OFF)
 option("NEWTON_WITH_SSE4_PLUGIN" "adding sse4 parallel solver (forces shared libs)" OFF)
@@ -23,7 +23,7 @@ option("NEWTON_WITH_AVX2_PLUGIN" "adding avx2 parallel solver (forces shared lib
 option("NEWTON_WITH_REFERENCE_GPU_PLUGIN" "adding gpu reference solver, gpu solve using avx2" ON)
 #option("NEWTON_WITH_GPU_PLUGIN" "adding gpu parallel solver, vulkan sdk" OFF)
 option("NEWTON_BUILD_SHARED_LIBS" "build shared library" ON)
-option("NEWTON_BUILD_CORE_ONLY" "build the core newton library only" OFF)
+option("NEWTON_BUILD_CORE_ONLY" "build the core newton library only" ON)
 
 set(CMAKE_CONFIGURATION_TYPES Debug RelWithDebInfo Release)
 set(CMAKE_DEBUG_POSTFIX "_d")
