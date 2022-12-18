@@ -143,7 +143,6 @@ jobs:
             -DCMAKE_INSTALL_PREFIX:PATH=out
 
         cmake --build build -j2
-        cmake --install build --strip
         
     - name: Archive results
       uses: actions/upload-artifact@v3
