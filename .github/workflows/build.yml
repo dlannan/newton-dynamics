@@ -37,7 +37,7 @@ jobs:
     - name: Archive results
       uses: actions/upload-artifact@v3
       with:
-        name: Linx newton
+        name: Android newton
         path: |
           /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgCore.a
           /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgPhysics.a
@@ -104,7 +104,7 @@ jobs:
     - name: Archive results
       uses: actions/upload-artifact@v3
       with:
-        name: Linx newton
+        name: Macos newton
         path: |
           /Users/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgCore.a
           /Users/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgPhysics.a
