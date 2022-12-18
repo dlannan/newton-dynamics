@@ -38,9 +38,9 @@ jobs:
       with:
         name: Linx newton
         path: |
-          ${ PROJECT_BINARY_DIR }/lib/libdgCore.a
-          ${ PROJECT_BINARY_DIR }/lib/libdgPhysics.a
-          ${ PROJECT_BINARY_DIR }/lib/libnewton.a
+          /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgCore.a
+          /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgPhysics.a
+          /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libnewton.a
     
   # build-macos:
   #   runs-on: macos-latest
