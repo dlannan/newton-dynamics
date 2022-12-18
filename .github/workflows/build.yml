@@ -38,9 +38,9 @@ jobs:
       with:
         name: Linx newton
         path: |
-          ${{ PROJECT_BINARY_DIR }}/lib/libdgCore.a
-          ${{ PROJECT_BINARY_DIR }}/lib/libdgPhysics.a
-          ${{ PROJECT_BINARY_DIR }}/lib/libnewton.a
+          ${ PROJECT_BINARY_DIR }/lib/libdgCore.a
+          ${ PROJECT_BINARY_DIR }/lib/libdgPhysics.a
+          ${ PROJECT_BINARY_DIR }/lib/libnewton.a
     
   # build-macos:
   #   runs-on: macos-latest
