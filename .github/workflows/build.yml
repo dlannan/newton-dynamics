@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Setup Linux
+    - name: Setup Android
       shell: bash
       run: |
         sudo apt update
