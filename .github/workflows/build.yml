@@ -50,8 +50,7 @@ jobs:
     - name: Setup MacOS
       shell: bash
       run: |
-        sudo apt update
-        sudo apt install -y cmake ninja-build
+        brew install cmake ninja
         cmake --version
         ninja --version
 
