@@ -24,7 +24,7 @@ jobs:
     - name: Build And Install Newton
       shell: bash
       run: |
-        cd newton-4.00
+        cd newton-3.14
         cmake \
             -S . -B build \
             -DNEWTON_BUILD_SANDBOX_DEMOS=OFF \
@@ -57,7 +57,7 @@ jobs:
     - name: Build Newton
       shell: bash
       run: |
-        cd newton-4.00
+        cd newton-3.14
         cmake \
             -S . -B build \
             -DNEWTON_BUILD_SANDBOX_DEMOS=OFF \
@@ -89,7 +89,7 @@ jobs:
     - name: Build Newton
       shell: bash
       run: |
-        cd newton-4.00
+        cd newton-3.14
         cmake \
             -S . -B build \
             -DNEWTON_BUILD_SANDBOX_DEMOS=OFF \
