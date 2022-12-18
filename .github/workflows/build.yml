@@ -1,4 +1,4 @@
-name: Build and run the Hello World apps
+name: Build the core newtown libraries for IOS, OSX, Android, Linux and Win.
 on:
   push:
     branches: [ "*" ]
