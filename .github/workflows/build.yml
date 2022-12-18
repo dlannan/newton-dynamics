@@ -21,7 +21,7 @@ jobs:
         cmake --version
         ninja --version
 
-    - name: Build And Install Newton
+    - name: Build Newton
       shell: bash
       run: |
         cd newton-3.14
@@ -38,7 +38,9 @@ jobs:
       with:
         name: Linx newton
         path: |
-          ./lib/libndNewton.lib
+          lib/libdgCore.a
+          lib/libdgPhysics.a
+          lib/libnewton.a
     
   # build-macos:
   #   runs-on: macos-latest
