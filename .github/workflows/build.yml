@@ -8,37 +8,37 @@ on:
     branches: [ master ]
     
 jobs:
-  # build-linux:
-  #   runs-on: ubuntu-22.04
-  #   steps:
-  #   - uses: actions/checkout@v3
+  build-linux:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v3
 
-  #   - name: Setup Linux
-  #     shell: bash
-  #     run: |
-  #       sudo apt update
-  #       sudo apt install -y cmake ninja-build
-  #       cmake --version
-  #       ninja --version
+    - name: Setup Linux
+      shell: bash
+      run: |
+        sudo apt update
+        sudo apt install -y cmake ninja-build
+        cmake --version
+        ninja --version
 
-  #   - name: Build And Install Newton
-  #     shell: bash
-  #     run: |
-  #       cd newton-3.14
-  #       cmake \
-  #           -S . -B build \
-  #           -DNEWTON_BUILD_SANDBOX_DEMOS=OFF \
-  #           -DCMAKE_BUILD_TYPE=Release \
-  #           -G "Ninja" 
+    - name: Build And Install Newton
+      shell: bash
+      run: |
+        cd newton-3.14
+        cmake \
+            -S . -B build \
+            -DNEWTON_BUILD_SANDBOX_DEMOS=OFF \
+            -DCMAKE_BUILD_TYPE=Release \
+            -G "Ninja" 
 
-  #       cmake --build build -j2
-        
-  #   - name: Archive results
-  #     uses: actions/upload-artifact@v3
-  #     with:
-  #       name: Linx newton
-  #       path: |
-  #         ./lib/libndNewton.so
+        cmake --build build -j2
+       
+    - name: Archive results
+      uses: actions/upload-artifact@v3
+      with:
+        name: Linx newton
+        path: |
+          ./lib/libndNewton.lib
     
   # build-macos:
   #   runs-on: macos-latest
