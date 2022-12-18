@@ -38,9 +38,9 @@ jobs:
       with:
         name: Linx newton
         path: |
-          libdgCore.a
-          libdgPhysics.a
-          libnewton.a
+          /newton-3.14/lib/libdgCore.a
+          /newton-3.14/lib/libdgPhysics.a
+          /newton-3.14/lib/libnewton.a
     
   # build-macos:
   #   runs-on: macos-latest
