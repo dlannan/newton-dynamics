@@ -1,5 +1,4 @@
-name: Build the core newtown libraries for IOS, OSX, Android, Linux and Win.
-on:
+name: Build Platforms Core
   push:
     branches: [ "*" ]
   pull_request:
