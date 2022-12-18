@@ -71,9 +71,9 @@ jobs:
       with:
         name: Linx newton
         path: |
-          /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgCore.a
-          /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgPhysics.a
-          /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libnewton.a
+          /Users/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgCore.a
+          /Users/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgPhysics.a
+          /Users/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libnewton.a
 
   build-windows:
     runs-on: windows-latest
