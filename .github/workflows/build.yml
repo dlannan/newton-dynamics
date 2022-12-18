@@ -44,7 +44,7 @@ jobs:
           /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgCore.a
           /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgPhysics.a
           /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libnewton.a
-          /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/temp/
+          /tmp/newton
 
   build-linux:
     runs-on: ubuntu-22.04
@@ -67,8 +67,8 @@ jobs:
             -S . -B build \
             -DNEWTON_BUILD_SANDBOX_DEMOS=OFF \
             -DCMAKE_BUILD_TYPE=Release \
-            -DCMAKE_INSTALL_PREFIX:PATH=/tmp/newton \
-            -G "Ninja" 
+            -G "Ninja" \
+            -DCMAKE_INSTALL_PREFIX:PATH=/tmp/newton 
 
         cmake --build build -j2
         cmake --install build --strip
@@ -81,7 +81,7 @@ jobs:
           /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgCore.a
           /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgPhysics.a
           /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libnewton.a
-          /home/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/tmp/
+          /tmp/newton
     
   build-macos:
     runs-on: macos-latest
@@ -117,7 +117,7 @@ jobs:
           /Users/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgCore.a
           /Users/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libdgPhysics.a
           /Users/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/lib/libnewton.a
-          /Users/runner/work/newton-dynamics/newton-dynamics/newton-3.14/build/tmp/
+          /tmp/newton
 
   build-windows:
     runs-on: windows-latest
