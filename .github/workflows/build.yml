@@ -1,4 +1,4 @@
-name: Build Platforms Core
+name: Build-Platforms-Core
   push:
     branches: [ "*" ]
   pull_request:
